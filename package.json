@@ -1,5 +1,5 @@
 {
-  "name": "crypto-ecb",
+  "name": "crypto-aes-ecb",
   "version": "0.0.0",
   "description": "AES ECB Library",
   "main": "./lib/src/index.js",

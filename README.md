@@ -13,28 +13,27 @@
 ## Install
 
 ```bash
-npm install crypto-ecb
+npm install crypto-aes-ecb
 ```
 
 ## Usage
 
 ```ts
-import { Aes256EcbEncrypt, Aes256EcbDecrypt } from 'crypto-ecb';
+import { Aes256EcbEncrypt, Aes256EcbDecrypt } from 'crypto-aes-ecb';
 
 const message = 'Hello';
 const key = 'secretkey16bytessecretkey16bytes'
 const encryptMessage = Aes256EcbEncrypt(message, key);
 const result = Aes256EcbDecrypt(encryptMessage, key);
 console.log(result) // Hello
-
 ```
 
 [build-img]:https://github.com/clarencetw/node-crypto-ecb/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/clarencetw/node-crypto-ecb/actions/workflows/release.yml
-[downloads-img]:https://img.shields.io/npm/dt/node-crypto-ecb
-[downloads-url]:https://www.npmtrends.com/node-crypto-ecb
-[npm-img]:https://img.shields.io/npm/v/node-crypto-ecb
-[npm-url]:https://www.npmjs.com/package/node-crypto-ecb
+[downloads-img]:https://img.shields.io/npm/dt/crypto-aes-ecb
+[downloads-url]:https://www.npmtrends.com/crypto-aes-ecb
+[npm-img]:https://img.shields.io/npm/v/crypto-aes-ecb
+[npm-url]:https://www.npmjs.com/package/crypto-aes-ecb
 [issues-img]:https://img.shields.io/github/issues/clarencetw/node-crypto-ecb
 [issues-url]:https://github.com/clarencetw/node-crypto-ecb/issues
 [codecov-img]:https://codecov.io/gh/clarencetw/node-crypto-ecb/branch/main/graph/badge.svg
