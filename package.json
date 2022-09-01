@@ -1,7 +1,7 @@
 {
-  "name": "typescript-npm-package-template",
-  "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "name": "crypto-ecb",
+  "version": "0.0.0",
+  "description": "AES ECB Library",
   "main": "./lib/src/index.js",
   "files": [
     "lib/**/*"
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/clarencetw/node-crypto-ecb.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Clarence Lin",
+    "email": "clarencetw@users.noreply.github.com",
+    "url": "https://github.com/clarencetw"
   },
   "engines": {
     "node": ">=12.0"
@@ -42,9 +42,9 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/clarencetw/node-crypto-ecb/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/clarencetw/node-crypto-ecb#readme",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
@@ -118,5 +118,6 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
-  }
+  },
+  "dependencies": {}
 }
