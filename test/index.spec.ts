@@ -25,5 +25,20 @@ describe('crypto', () => {
 
       expect(result).toMatch(message);
     });
+
+    it('Aes256EcbEncrypt to Aes256EcbDecrypt', () => {
+      const message = 'Hello';
+
+      const encryptMessage = Aes256EcbEncrypt(
+        message,
+        'secretkey16bytessecretkey16bytes'
+      );
+      const result = Aes256EcbDecrypt(
+        encryptMessage,
+        'secretkey16bytessecretkey16bytes'
+      );
+
+      expect(result).toMatch(message);
+    });
   });
 });

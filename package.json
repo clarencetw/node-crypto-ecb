@@ -119,5 +119,7 @@
       "@semantic-release/github"
     ]
   },
-  "dependencies": {}
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
 }
