@@ -9,7 +9,6 @@ export const Aes256EcbEncrypt = (text: string, key: string): string => {
 
 export const Aes256EcbDecrypt = (data: string, key: string): string => {
   const decipher = crypto.createDecipheriv('aes-256-ecb', key, '');
-  decipher.setAutoPadding(false);
   let decoded = decipher.update(data, 'base64', 'utf8');
   decoded += decipher.final('utf8');
   return decoded as string;
