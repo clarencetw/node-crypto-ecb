@@ -16,7 +16,7 @@
 npm install crypto-aes-ecb
 ```
 
-## Usage
+## Usage AES 256
 
 ```ts
 import { Aes256EcbEncrypt, Aes256EcbDecrypt } from 'crypto-aes-ecb';
@@ -25,6 +25,30 @@ const message = 'Hello';
 const key = 'secretkey16bytessecretkey16bytes'
 const encryptMessage = Aes256EcbEncrypt(message, key);
 const result = Aes256EcbDecrypt(encryptMessage, key);
+console.log(result) // Hello
+```
+
+## Usage AES 192
+
+```ts
+import { Aes192EcbEncrypt, Aes192EcbDecrypt } from 'crypto-aes-ecb';
+
+const message = 'Hello';
+const key = 'secretkeysecretkey24byte'
+const encryptMessage = Aes192EcbEncrypt(message, key);
+const result = Aes192EcbDecrypt(encryptMessage, key);
+console.log(result) // Hello
+```
+
+## Usage AES 128
+
+```ts
+import { Aes128EcbEncrypt, Aes128EcbDecrypt } from 'crypto-aes-ecb';
+
+const message = 'Hello';
+const key = 'secretkey16bytes'
+const encryptMessage = Aes128EcbEncrypt(message, key);
+const result = Aes128EcbDecrypt(encryptMessage, key);
 console.log(result) // Hello
 ```
 
