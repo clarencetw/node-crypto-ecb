@@ -8,7 +8,7 @@
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
-> AES ECB Library
+> A Encrypt/Decrypt AES ECB library for NodeJS.
 
 ## Install
 
@@ -16,7 +16,7 @@
 npm install crypto-aes-ecb
 ```
 
-## Usage AES 256
+## Usage AES ECB 256
 
 ```ts
 import { Aes256EcbEncrypt, Aes256EcbDecrypt } from 'crypto-aes-ecb';
@@ -28,7 +28,7 @@ const result = Aes256EcbDecrypt(encryptMessage, key);
 console.log(result) // Hello
 ```
 
-## Usage AES 192
+## Usage AES ECB 192
 
 ```ts
 import { Aes192EcbEncrypt, Aes192EcbDecrypt } from 'crypto-aes-ecb';
@@ -40,7 +40,7 @@ const result = Aes192EcbDecrypt(encryptMessage, key);
 console.log(result) // Hello
 ```
 
-## Usage AES 128
+## Usage AES ECB 128
 
 ```ts
 import { Aes128EcbEncrypt, Aes128EcbDecrypt } from 'crypto-aes-ecb';
