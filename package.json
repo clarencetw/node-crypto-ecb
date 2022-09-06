@@ -1,6 +1,6 @@
 {
   "name": "crypto-aes-ecb",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "A Encrypt/Decrypt AES ECB library for NodeJS.",
   "main": "./lib/src/index.js",
   "files": [
